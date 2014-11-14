@@ -1,0 +1,255 @@
+<html>
+
+<head>
+    <title>Cross Country</title>
+    <link rel="stylesheet" type="text/css" href="CSS/crosscountry.css">
+    <script src="JS/crosscountry.js">
+    </script>
+</head>
+
+<body bgcolor="#93B1C6">
+    <center>
+        <h1>Cross Country</h1>
+        <table id="input" border="1" style="width : 0%" bgcolor="#82AFF9">
+            <h2>Input</h2>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Mile One</th>
+                <th>Mile Two</th>
+                <th>Total Time</th>
+                <th colspan="3"></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="message" id="fName1" name="row1" class="info">
+                </td>
+                <td>
+                    <input type="message" id="lName1" name="row1" class="info">
+                </td>
+                <td>
+                    <input type="message" id="mileOne1" name="row1" class="info">
+                </td>
+                <td>
+                    <input type="message" id="mileTwo1" name="row1" class="info">
+                </td>
+                <td>
+                    <input type="message" id="tTotal1" name="row1" class="info">
+                </td>
+                <td>
+                    <input type="button" value="update" onclick="javascript:updateOne();" class="button" />
+                </td>
+                <td>
+                    <input type="button" value="delete" onclick="javascript:deleteOne();" class="button" />
+                </td>
+                <td>
+                    <input type="button" value="Restore" onclick="javascript:restoreOne();" class="button" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="message" id="fName2" name="row2" class="info">
+                </td>
+                <td>
+                    <input type="message" id="lName2" name="row2" class="info">
+                </td>
+                <td>
+                    <input type="message" id="mileOne2" name="row2" class="info">
+                </td>
+                <td>
+                    <input type="message" id="mileTwo2" name="row2" class="info">
+                </td>
+                <td>
+                    <input type="message" id="tTotal2" name="row2" class="info">
+                </td>
+                <td>
+                    <input type="button" value="update" onclick="javascript:updateTwo();" class="button" />
+                </td>
+                <td>
+                    <input type="button" value="delete" onclick="javascript:deleteTwo();" class="button" />
+                </td>
+                <td>
+                    <input type="button" value="Restore" onclick="javascript:restoreTwo();" class="button" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="message" id="fName3" name="row3" class="info">
+                </td>
+                <td>
+                    <input type="message" id="lName3" name="row3" class="info">
+                </td>
+                <td>
+                    <input type="message" id="mileOne3" name="row3" class="info">
+                </td>
+                <td>
+                    <input type="message" id="mileTwo3" name="row3" class="info">
+                </td>
+                <td>
+                    <input type="message" id="tTotal3" name="row3" class="info">
+                </td>
+                <td>
+                    <input type="button" value="update" onclick="javascript:updateThree();" class="button" />
+                </td>
+                <td>
+                    <input type="button" value="delete" onclick="javascript:deleteThree();" class="button" />
+                </td>
+                <td>
+                    <input type="button" value="Restore" onclick="javascript:restoreTwo();" class="button" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="message" id="fName4" name="row4" class="info">
+                </td>
+                <td>
+                    <input type="message" id="lName4" name="row4" class="info">
+                </td>
+                <td>
+                    <input type="message" id="mileOne4" name="row4" class="info">
+                </td>
+                <td>
+                    <input type="message" id="mileTwo4" name="row4" class="info">
+                </td>
+                <td>
+                    <input type="message" id="tTotal4" name="row4" class="info">
+                </td>
+                <td>
+                    <input type="button" value="update" onclick="javascript:updateFour();" class="button" />
+                </td>
+                <td>
+                    <input type="button" value="delete" onclick="javascript:deleteFour();" class="button" />
+                </td>
+                <td>
+                    <input type="button" value="Restore" onclick="javascript:restoreFour();" class="button" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="message" id="fName5" name="row5" class="info">
+                </td>
+                <td>
+                    <input type="message" id="lName5" name="row5" class="info">
+                </td>
+                <td>
+                    <input type="message" id="mileOne5" name="row5" class="info">
+                </td>
+                <td>
+                    <input type="message" id="mileTwo5" name="row5" class="info">
+                </td>
+                <td>
+                    <input type="message" id="tTotal5" name="row5" class="info">
+                </td>
+                <td>
+                    <input type="button" value="update" onclick="javascript:updateFive();" class="button" />
+                </td>
+                <td>
+                    <input type="button" value="delete" onclick="javascript:deleteFive();" class="button" />
+                </td>
+                <td>
+                    <input type="button" value="Restore" onclick="javascript:restoreFive();" class="button" />
+                </td>
+            </tr>
+        </table>
+        <h2>Stats</h2>
+        <table id="output" border="2" style="width : 1000px" bgcolor="#82AFF9">
+            <th>Runner Name</th>
+            <th>Split One</th>
+            <th>Split Two</th>
+            <th>Split Three</th>
+            <th>Total Time</th>
+
+            <tr>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+
+        </table>
+
+
+    </center>
+
+</body>
+
+</html>

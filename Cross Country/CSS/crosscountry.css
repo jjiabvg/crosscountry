@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", arial;
+}
+table {
+    width: 200%;
+    border-collapse: collapse;
+    margin: 50px auto;
+    background: white;
+}
+.input {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: float 5s infinite;
+    width: : 500px;
+}
+.output {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: float 5s infinite;
+    width: 1000px;
+}
+h1 {
+    color: #E0E4CC;
+}
+h2 {
+    color: #C7D0D5;
+}
+th, td {
+    border: 1px solid #CCC;
+}
+th {
+    background: steelblue;
+    height: 54px;
+    font-weight: lighter;
+    text-shadow: 0 1px 0 #38678f;
+    color: white;
+    border: 1px solid #38678f;
+    box-shadow: inset 0px 1px 2px #568ebd;
+    transition: all 0.2s;
+}
+tr {
+    border-bottom: 1px solid #cccccc;
+    height: 25px;
+}
+.button {
+    display: inline-block;
+    color: white;
+    height: 24px;
+    border: 1px solid #38678f;
+    background: steelblue;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 1px 3px rgba(255, 255, 255, 0.2);
+    transition: all 0.1s;
+}
+.button:active {
+    color: #294d6b;
+    background: #427aa9;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+    background: #9894E3;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #aaa;
+}
+tbody:hover tr:hover td {
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+}

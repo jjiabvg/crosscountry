@@ -3,11 +3,34 @@ var stackR2 = new Array();
 var stackR3 = new Array();
 var stackR4 = new Array();
 var stackR5 = new Array();
-var firstArr = new Array();
-var lastArr = new Array();
-var oArr = new Array();
-var tArr = new Array();
-var totalArr = new Array();
+var firstArr1 = new Array();
+var lastArr1 = new Array();
+var oArr1 = new Array();
+var tArr1 = new Array();
+var totalArr1 = new Array();
+var firstArr2 = new Array();
+var lastArr2 = new Array();
+var oArr2 = new Array();
+var tArr2 = new Array();
+var totalArr2 = new Array();
+var firstArr3 = new Array();
+var lastArr3 = new Array();
+var oArr3 = new Array();
+var tArr3 = new Array();
+var totalArr3 = new Array();
+var firstArr4 = new Array();
+var lastArr4 = new Array();
+var oArr4 = new Array();
+var tArr4 = new Array();
+var totalArr4 = new Array();
+var firstArr5 = new Array();
+var lastArr5 = new Array();
+var oArr5 = new Array();
+var tArr5 = new Array();
+var totalArr5 = new Array();
+
+
+
 
 function isEmpty(value) {
     return (value == null || value.length === 0);
@@ -20,66 +43,91 @@ function update(rownum) {
         var timeTotal = document.getElementById("tTotal1").value;
         var timeO = document.getElementById("mileOne1").value;
         var timeT = document.getElementById("mileTwo1").value;
+        firstArr1.push(firstName);
+        lastArr1.push(lastName);
+        oArr1.push(timeO);
+        tArr1.push(timeT);
+        totalArr1.push(timeTotal);
+
     } else if (rownum == 2) {
         var firstName = document.getElementById("fName2").value;
         var lastName = document.getElementById("lName2").value;
         var timeTotal = document.getElementById("tTotal2").value;
         var timeO = document.getElementById("mileOne2").value;
         var timeT = document.getElementById("mileTwo2").value;
+        firstArr2.push(firstName);
+        lastArr2.push(lastName);
+        oArr2.push(timeO);
+        tArr2.push(timeT);
+        totalArr2.push(timeTotal);
+
     } else if (rownum == 3) {
         var firstName = document.getElementById("fName3").value;
         var lastName = document.getElementById("lName3").value;
         var timeTotal = document.getElementById("tTotal3").value;
         var timeO = document.getElementById("mileOne3").value;
         var timeT = document.getElementById("mileTwo3").value;
+        firstArr3.push(firstName);
+        lastArr3.push(lastName);
+        oArr3.push(timeO);
+        tArr3.push(timeT);
+        totalArr3.push(timeTotal);
+
     } else if (rownum == 4) {
         var firstName = document.getElementById("fName4").value;
         var lastName = document.getElementById("lName4").value;
         var timeTotal = document.getElementById("tTotal4").value;
         var timeO = document.getElementById("mileOne4").value;
         var timeT = document.getElementById("mileTwo4").value;
+        firstArr4.push(firstName);
+        lastArr4.push(lastName);
+        oArr4.push(timeO);
+        tArr4.push(timeT);
+        totalArr4.push(timeTotal);
+
     } else if (rownum == 5) {
         var firstName = document.getElementById("fName5").value;
         var lastName = document.getElementById("lName5").value;
         var timeTotal = document.getElementById("tTotal5").value;
         var timeO = document.getElementById("mileOne5").value;
         var timeT = document.getElementById("mileTwo5").value;
+        firstArr5.push(firstName);
+        lastArr5.push(lastName);
+        oArr5.push(timeO);
+        tArr5.push(timeT);
+        totalArr5.push(timeTotal);
+
     }
-    firstArr.push(firstName);
-    lastArr.push(lastName);
-    oArr.push(timeO);
-    tArr.push(timeT);
-    totalArr.push(timeTotal);
-       if (rownum == 1) {
-        stackR1.push(firstArr);
-        stackR1.push(lastArr);
-        stackR1.push(oArr);
-        stackR1.push(tArr);
-        stackR1.push(totalArr);
+    if (rownum == 1) {
+        stackR1.push(firstArr1);
+        stackR1.push(lastArr1);
+        stackR1.push(oArr1);
+        stackR1.push(tArr1);
+        stackR1.push(totalArr1);
     } else if (rownum == 2) {
-        stackR2.push(firstArr);
-        stackR2.push(lastArr);
-        stackR2.push(oArr);
-        stackR2.push(tArr);
+        stackR2.push(firstArr2);
+        stackR2.push(lastArr2);
+        stackR2.push(oArr2);
+        stackR2.push(tArr2);
         stackR2.push(totalArr);
     } else if (rownum == 3) {
-        stackR3.push(firstArr);
-        stackR3.push(lastArr);
-        stackR3.push(oArr);
-        stackR3.push(tArr);
-        stackR3.push(totalArr);
+        stackR3.push(firstArr3);
+        stackR3.push(lastArr3);
+        stackR3.push(oArr3);
+        stackR3.push(tArr3);
+        stackR3.push(totalArr3);
     } else if (rownum == 4) {
-        stackR4.push(firstArr);
-        stackR4.push(lastArr);
-        stackR4.push(oArr);
-        stackR4.push(tArr);
+        stackR4.push(firstArr4);
+        stackR4.push(lastArr4);
+        stackR4.push(oArr4);
+        stackR4.push(tArr4);
         stackR4.push(totalArr);
     } else if (rownum == 5) {
-        stackR5.push(firstArr);
-        stackR5.push(lastArr);
-        stackR5.push(oArr);
-        stackR5.push(tArr);
-        stackR5.push(totalArr);
+        stackR5.push(firstArr5);
+        stackR5.push(lastArr5);
+        stackR5.push(oArr5);
+        stackR5.push(tArr5);
+        stackR5.push(totalArr5);
     }
     var fullName = firstName + " " + lastName;
 
@@ -125,18 +173,24 @@ function update(rownum) {
             table.rows[rownum].cells[3].innerHTML = finM + ":" + finS;
         }
         table.rows[rownum].cells[4].innerHTML = timeTotal;
+        firstArr.pop();
+        lastArr.pop();
+        oArr.pop();
+        tArr.pop();
+        totalArr.pop();
+
 
     }
 }
 
 function restore(rownum) {
-    if (stackR1.length == 0) {
-        alert("nothing to restore")
-    } else if (stackR1[0].length == 0) {
-        alert("end of stack")
-    } else {
-        var table = document.getElementById("output");
-        if (rownum == 1) {
+    var table = document.getElementById("output");
+    if (rownum == 1) {
+        if (stackR1.length == 0) {
+            alert("nothing to restore in row 1")
+        } else if (stackR1[0].length == 0) {
+            alert("end of stack in row 1")
+        } else {
             var o1 = document.getElementById("fName1");
             var o2 = document.getElementById("lName1");
             var o3 = document.getElementById("mileOne1");;
@@ -147,8 +201,14 @@ function restore(rownum) {
             o3.value = stackR1[2].pop();
             o4.value = stackR1[3].pop();
             o5.value = stackR1[4].pop();
+        }
+    } else if (rownum == 2) {
+        if (stackR2.length == 0) {
+            alert("nothing to restore in row 2")
+        } else if (stackR2[0].length == 0) {
+            alert("end of stack in row 2")
+        } else {
 
-        } else if (rownum == 2) {
             var o1 = document.getElementById("fName2");
             var o2 = document.getElementById("lName2");
             var o3 = document.getElementById("mileOne2");;
@@ -160,7 +220,14 @@ function restore(rownum) {
             o4.value = stackR2[3].pop();
             o5.value = stackR2[4].pop();
 
-        } else if (rownum == 3) {
+        }
+    } else if (rownum == 3) {
+        if (stackR3.length == 0) {
+            alert("nothing to restore in row 3")
+        } else if (stackR3[0].length == 0) {
+            alert("end of stack in row 3")
+        } else {
+
             var o1 = document.getElementById("fName3");
             var o2 = document.getElementById("lName3");
             var o3 = document.getElementById("mileOne3");;
@@ -171,8 +238,15 @@ function restore(rownum) {
             o3.value = stackR3[2].pop();
             o4.value = stackR3[3].pop();
             o5.value = stackR3[4].pop();
+        }
 
-        } else if (rownum == 4) {
+    } else if (rownum == 4) {
+        if (stackR4.length == 0) {
+            alert("nothing to restore in row 4")
+        } else if (stackR4[0].length == 0) {
+            alert("end of stack in row 4")
+        } else {
+
             var o1 = document.getElementById("fName4");
             var o2 = document.getElementById("lName4");
             var o3 = document.getElementById("mileOne4");;
@@ -183,8 +257,14 @@ function restore(rownum) {
             o3.value = stackR4[2].pop();
             o4.value = stackR4[3].pop();
             o5.value = stackR4[4].pop();
+        }
+    } else if (rownum == 5) {
+        if (stackR4.length == 0) {
+            alert("nothing to restore in row 5")
+        } else if (stackR4[0].length == 0) {
+            alert("end of stack in row 5")
+        } else {
 
-        } else if (rownum == 5) {
             var o1 = document.getElementById("fName5");
             var o2 = document.getElementById("lName5");
             var o3 = document.getElementById("mileOne5");;

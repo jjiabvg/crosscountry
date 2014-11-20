@@ -50,7 +50,37 @@ function update(rownum) {
     oArr.push(timeO);
     tArr.push(timeT);
     totalArr.push(timeTotal);
-
+       if (rownum == 1) {
+        stackR1.push(firstArr);
+        stackR1.push(lastArr);
+        stackR1.push(oArr);
+        stackR1.push(tArr);
+        stackR1.push(totalArr);
+    } else if (rownum == 2) {
+        stackR2.push(firstArr);
+        stackR2.push(lastArr);
+        stackR2.push(oArr);
+        stackR2.push(tArr);
+        stackR2.push(totalArr);
+    } else if (rownum == 3) {
+        stackR3.push(firstArr);
+        stackR3.push(lastArr);
+        stackR3.push(oArr);
+        stackR3.push(tArr);
+        stackR3.push(totalArr);
+    } else if (rownum == 4) {
+        stackR4.push(firstArr);
+        stackR4.push(lastArr);
+        stackR4.push(oArr);
+        stackR4.push(tArr);
+        stackR4.push(totalArr);
+    } else if (rownum == 5) {
+        stackR5.push(firstArr);
+        stackR5.push(lastArr);
+        stackR5.push(oArr);
+        stackR5.push(tArr);
+        stackR5.push(totalArr);
+    }
     var fullName = firstName + " " + lastName;
 
 
@@ -70,12 +100,6 @@ function update(rownum) {
     } else if (isEmpty(firstName) || isEmpty(lastName)) {
         alert("please enter the name");
     } else {
-        stackR1.push(firstArr);
-        stackR1.push(lastArr);
-        stackR1.push(oArr);
-        stackR1.push(tArr);
-        stackR1.push(totalArr);
-
         secondsMO = secondT - secondO;
         secondsTO = secondTotal - secondT;
         var finM;
